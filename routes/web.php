@@ -20,7 +20,7 @@ Route::get('/', function () {
         'compatibility' =>[
             'php',
             'Vue',
-            'bootstrap',
+            'boostrap',
         ]
     ];
     return view('home', $data);
