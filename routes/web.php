@@ -17,6 +17,11 @@ Route::get('/', function () {
     $welcome_message = "Benvenuto in Laravel";
     $data = [
         'welcome_message' => $welcome_message,
+        'compatibility' =>[
+            'php',
+            'Vue',
+            'bootstrap',
+        ]
     ];
     return view('home', $data);
 })-> name('home');

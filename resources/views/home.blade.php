@@ -8,5 +8,11 @@
 </head>
 <body>
     <h1>{{$welcome_message}}</h1>
+    <h4>Laravel è compatibile con:</h4>
+    <ul>
+    @foreach ($compatibility as $element)
+                    <li>{{$element}}</li>
+                @endforeach
+    </ul>
 </body>
 </html>
